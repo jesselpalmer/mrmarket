@@ -13,7 +13,7 @@ contract MrMarketFactory {
   MrMarket[] public mrMarkets;
 
   function _createMrMarket(string memory _name, uint _id) private {
-    mrMarkets.push(MrMarket(_name, _dna));        
+    mrMarkets.push(MrMarket(_name, _id));        
   }
 
   function _generateRandomId(string memory _str) private view returns (uint) {
