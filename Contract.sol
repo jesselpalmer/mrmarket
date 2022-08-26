@@ -17,6 +17,12 @@ contract MrMarketFactory {
   }
 
   function _generateRandomId(string memory _str) private view returns (uint) {
-
+    uint rand = uint(keccak256(abi.encodePacked(_str)));
+    return rand % dnaModulus;
   }
+
+  function createRandomMrMarket(string memory _name) public {
+        uint randId = _generateRandomId(_name);
+        _createZombie(_name, randId);
+    }
 }
