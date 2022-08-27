@@ -1,0 +1,14 @@
+{
+  "name": "mrmarket",
+  "version": "0.0.0",
+  "description": "mr market smart contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Palmer",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.10.2"
+  }
+}
