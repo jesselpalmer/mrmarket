@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/jessepalmer/Software/mrmarket/contracts/MrMarket.sol": {
+      "lastModificationDate": 1661647744547,
+      "contentHash": "3ce2da2465990bb52651da13dceb5139",
+      "sourceName": "contracts/MrMarket.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.9 <0.9.0"
+      ],
+      "artifacts": [
+        "MrMarketFactory"
+      ]
+    }
+  }
+}
