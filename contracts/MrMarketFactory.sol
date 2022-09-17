@@ -1,13 +1,10 @@
 // SPDX-License-Identifier: UNLICENSED
 
-pragma solidity >=0.8.9 <0.9.0;
+pragma solidity ^0.8.17;
 
 contract MrMarketFactory {
 
   event NewMrMarket(uint id, string name, uint dna);
-
-  uint mrMarketDigits = 100;
-  uint dnaModulus = 10 ** mrMarketDigits;
 
   struct MrMarket {
     string name;
@@ -22,7 +19,9 @@ contract MrMarketFactory {
     emit NewMrMarket(id, _name, _dna);     
   }
 
-  function _generateRandomDna(string memory _str) private view returns (uint) {
+  function _generateRandomDna(string memory _str) private pure returns (uint) {
+    uint mrMarketDigits = 100;
+    uint dnaModulus = 10 ** mrMarketDigits;
     uint rand = uint(keccak256(abi.encodePacked(_str)));
     return rand % dnaModulus;
   }
